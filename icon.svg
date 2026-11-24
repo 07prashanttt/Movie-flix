@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+ <rect width="512" height="512" rx="100" fill="#090909"/>
+ <path d="M110 95h292v322H110z" rx="35" fill="#e50914"/>
+ <path d="M210 165v182l145-91z" fill="white"/>
+ <text x="256" y="455" text-anchor="middle"
+ font-family="Arial" font-size="35" font-weight="bold"
+ fill="white">P FLIX</text>
+</svg>
