@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="PRASHANT FLIX - Movies, Web Series and Live TV">
+  <title>PRASHANT FLIX</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icon.svg">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PRASHANT <span>FLIX</span></div>
+    <button id="installBtn" class="install hidden">Install App</button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <span class="tag">WELCOME TO PRASHANT FLIX</span>
+        <h1>Entertainment<br>Never Stops.</h1>
+        <p>Movies, Web Series and Live TV in one place.</p>
+        <button id="heroPlay" class="primary">▶ Explore Now</button>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <button class="nav-btn active" data-page="home">Home</button>
+      <button class="nav-btn" data-page="movies">Movies</button>
+      <button class="nav-btn" data-page="series">Series</button>
+      <button class="nav-btn" data-page="live">Live TV</button>
+      <button class="nav-btn" data-page="mylist">My List</button>
+    </nav>
+
+    <section class="search-area">
+      <input id="search" type="search" placeholder="Search movies, series...">
+    </section>
+
+    <section id="content">
+      <h2>Trending Now</h2>
+      <div id="trending" class="movie-grid"></div>
+      <h2>Movies</h2>
+      <div id="movieSection" class="movie-grid"></div>
+      <h2>Web Series</h2>
+      <div id="seriesSection" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <div id="playerModal" class="modal hidden">
+    <div class="player-box">
+      <button id="closePlayer" class="close">✕</button>
+      <h2 id="playerTitle">Now Playing</h2>
+      <video id="videoPlayer" controls playsinline></video>
+      <p id="playerInfo">Demo content</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="brand">PRASHANT <span>FLIX</span></div>
+    <p>Made with ❤️ by Prashant</p>
+    <p>© 2026 PRASHANT FLIX</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
